@@ -64,17 +64,6 @@ if selected=="ホーム":
 </head>
 
 <body>
-    <!-- Navi -->
-    <div id="navigation-container"></div>
-    <script>
-    // JavaScriptを使用してナビゲーションを読み込む
-    fetch('navigation.html')
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById('navigation-container').innerHTML = data;
-        });
-    </script>
-
     <!-- 初めに -->
     <div class="content text-black mx-5 mt-3">
         <h3><span class="text-success fw-bold">レコメンド</span>で読者と作家・作品をつなぐ小説投稿サイト　<span class="text-success fw-bold">Novel.+</span></h3>
