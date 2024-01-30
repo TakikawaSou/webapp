@@ -18,7 +18,6 @@ with open("/mount/src/webapp/pages/write.html","r") as f:
 
 with open("/mount/src/webapp/pages/contact.html","r") as f:
     html_contact = f.read()
-    print(html_contact)
 
 with open("/mount/src/webapp/pages/log_in.html","r") as f:
     html_log_in = f.read()
@@ -32,7 +31,7 @@ options=["ホーム","our vision","ユーザー登録","レコメンド", "投�
 if selected=="ホーム":
     st.markdown("[ホーム](html_index)",unsafe_allow_html=True)
 if selected=="our vision":
-    st.markdown("[our vision](htnl_about)",unsafe_allow_html=True)
+    st.markdown("[our vision](html_about)",unsafe_allow_html=True)
 if selected=="ユーザー登録":
     st.markdown("[ユーザー登録](html_access)",unsafe_allow_html=True)
 if selected=="レコメンド":
