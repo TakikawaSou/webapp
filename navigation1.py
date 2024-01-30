@@ -1,26 +1,26 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-with open("Masayoshi-Nakagawa/webapp/pages/index.html","r") as f:
+with open("/webapp/pages/index.html","r") as f:
     html_index = f.read()
 
-with open("Masayoshi-Nakagawa/webapp/pages/about.html","r") as f:
+with open("/webapp/pages/about.html","r") as f:
     html_about = f.read()
 
-with open("Masayoshi-Nakagawa/webapp/pages/access.html","r") as f:
+with open("/webapp/pages/access.html","r") as f:
     html_access = f.read()
 
-with open("Masayoshi-Nakagawa/webapp/pages/read_home.html","r") as f:
+with open("/webapp/pages/read_home.html","r") as f:
     html_read_home = f.read()
 
-with open("Masayoshi-Nakagawa/webapp/pages/write.html","r") as f:
+with open("/webapp/pages/write.html","r") as f:
     html_write = f.read()
 
-with open("Masayoshi-Nakagawa/webapp/pages/contact.html","r") as f:
+with open("/webapp/pages/contact.html","r") as f:
     html_contact = f.read()
     print(html_contact)
 
-with open("Masayoshi-Nakagawa/webapp/pages/log_in.html","r") as f:
+with open("/webapp/pages/log_in.html","r") as f:
     html_log_in = f.read()
 
 with st.sidebar:
