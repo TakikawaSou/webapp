@@ -40,4 +40,4 @@ if selected=="レコメンド":
 if selected=="投稿する":
     st.markdown("[投稿する](html_write)",unsafe_allow_html=True)
 if selected=="お問い合わせ":
-    st.markdown("[お問い合わせ](html_contact)",unsafe_allow
+    st.markdown("[お問い合わせ](html_contact)",unsafe_allow_html=True)
