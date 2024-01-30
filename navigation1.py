@@ -1,28 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-with open("/mount/src/webapp/templates/index.html","r") as f:
-    html_index = f.read()
-
-with open("/mount/src/webapp/templates/about.html","r") as f:
-    html_about = f.read()
-
-with open("/mount/src/webapp/templates/access.html","r") as f:
-    html_access = f.read()
-
-with open("/mount/src/webapp/templates/read_home.html","r") as f:
-    html_read_home = f.read()
-
-with open("/mount/src/webapp/templates/write.html","r") as f:
-    html_write = f.read()
-
-with open("/mount/src/webapp/templates/contact.html","r") as f:
-    html_contact = f.read()
-    print(html_contact)
-
-with open("/mount/src/webapp/templates/log_in.html","r") as f:
-    html_log_in = f.read()
-
 with st.sidebar:
     selected = option_menu(
 menu_title="メインメニュー",
