@@ -8,7 +8,7 @@ options=["ホーム","our vision","ユーザー登録","レコメンド", "投�
 )
 
 if selected=="ホーム":
-    st.markdown("[ホーム](./pages/index.html)",unsafe_allow_html=True)
+    st.markdown("[ホーム](webapp/pages/index.html)",unsafe_allow_html=True)
     
 if selected=="our vision":
     st.markdown("[our vision](html_about)",unsafe_allow_html=True)
