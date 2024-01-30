@@ -1,26 +1,26 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-with open("/var/www/html/pages/index.html","r") as f:
+with open("/pages/index.html","r") as f:
     html_index = f.read()
 
-with open("/home/masayosi/python/mainpages/pages/about.html","r") as f:
+with open("/pages/about.html","r") as f:
     html_about = f.read()
 
-with open("/home/masayosi/python/mainpages/pages/access.html","r") as f:
+with open("/pages/access.html","r") as f:
     html_access = f.read()
 
-with open("/home/masayosi/python/mainpages/pages/read_home.html","r") as f:
+with open("/pages/read_home.html","r") as f:
     html_read_home = f.read()
 
-with open("/home/masayosi/python/mainpages/pages/write.html","r") as f:
+with open("/pages/write.html","r") as f:
     html_write = f.read()
 
-with open("/home/masayosi/python/mainpages/pages/contact.html","r") as f:
+with open("/pages/contact.html","r") as f:
     html_contact = f.read()
     print(html_contact)
 
-with open("/home/masayosi/python/mainpages/pages/log_in.html","r") as f:
+with open("/pages/log_in.html","r") as f:
     html_log_in = f.read()
 
 with st.sidebar:
@@ -30,9 +30,9 @@ options=["ホーム","our vision","ユーザー登録","レコメンド", "投�
 )
 
 if selected=="ホーム":
-    st.markdown("[ホーム](/var/www/html/pages/index.html)",unsafe_allow_html=True)
+    st.markdown("[ホーム](html_index)",unsafe_allow_html=True)
 if selected=="our vision":
-    st.markdown("[our vision](/var/www/html/pages/about.html)",unsafe_allow_html=True)
+    st.markdown("[our vision](htnl_about)",unsafe_allow_html=True)
 if selected=="ユーザー登録":
     st.markdown("[ユーザー登録](html_access)",unsafe_allow_html=True)
 if selected=="レコメンド":
