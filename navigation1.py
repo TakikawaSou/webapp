@@ -158,7 +158,7 @@ if selected=="our vision":
     st.markdown("(https://www.kodansha.co.jp/)",unsafe_allow_html=True)
     
 if selected=="レコメンド":
-    st.markdown("[レコメンド](html_read_home)",unsafe_allow_html=True)
+    st.markdown("[レコメンド](https://masayoshi-nakagawa.github.io/IseTrip/Isetrip320.html)",unsafe_allow_html=True)
     
 if selected=="画像生成":
     st.markdown("[画像生成](html_access)",unsafe_allow_html=True)
