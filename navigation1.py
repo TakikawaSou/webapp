@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-image = image.open('logo_novel1.png')
+image = image.open('/mount/src/webapp/logo_novel1.png')
 st.image(image,widt=200)
 
 
