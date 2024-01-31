@@ -1,6 +1,45 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 
+st.markdown("""
+<body>
+    <!-- NAV -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand my-0" href="index.html"><img src="./logo_novel1.png" height="40"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fw-bold" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-2">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">ホーム</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">our vision</a></li>
+                    <li class="nav-item"><a class="nav-link" href="access.html">ユーザー登録</a></li>
+                    <li class="nav-item"><a class="nav-link" href="read_home.html">小説を読む</a></li>
+                    <li class="nav-item"><a class="nav-link" href="write.html">小説を書く</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">お問い合わせ</a></li>
+                    <li class="nav-item"><a class="btn btn-success btn-sm text-white" href="log_in.html">ログイン</a></li>
+                    <li class="nav-item"><a class="btn btn-success btn-sm text-white" href="index.html">ログアウト</a></li>
+                </ul>
+                <!-- <a class="btn btn-dark btn-sm text-white" href="#">無料で始める</a> -->
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script> 
+    
+</body>""",unsafe_allow_html=True)
+
+
+
 with st.sidebar:
     selected = option_menu(
 menu_title="メインメニュー",
