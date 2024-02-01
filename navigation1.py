@@ -96,7 +96,7 @@ if selected=="ホーム":
 <section class="bg-white text-white" id="showcases1">
     <div class="row border m-3 bg-custom-green">
         <div class="col-md-3 rounded-image">
-            <img src="image1.jpg" alt="Your Image"> <!-- 画像を挿入 -->
+            <img src="./app/static/image1.jpg" alt="Your Image"> <!-- 画像を挿入 -->
         </div>
         <div class="col-md-9">
             <h3 class="text-move"><a class="text-white" href="read.html">春の出会い</a></h3>
