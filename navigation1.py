@@ -1,11 +1,15 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 from PIL import Image
+import base64
+from pathlib import Path
 
 image = Image.open('logo_novel1.png')
 st.image(image)
 
-
+image1 = "image1.png"
+image_bytes = Path(image1).read_bytes()
+image_encoded = base64.b64encode(image_bytes).decode()
 
 with st.sidebar:
     selected = option_menu(
@@ -80,7 +84,7 @@ if selected=="ホーム":
 <section class="bg-white text-white">
     <div class="row border m-3 bg-custom-green">
         <div class="col-md-3 rounded-image">
-            <img src="image0.jpg" alt="Your Image"> <!-- 画像を挿入 -->
+            <img src="./app/static/image1.jpg" alt="Your Image"> <!-- 画像を挿入 -->
         </div>
         <div class="col-md-9">
             <h3 class="text-move"><a class="text-white" href="read.html">空へ</a></h3>
@@ -96,7 +100,7 @@ if selected=="ホーム":
 <section class="bg-white text-white" id="showcases1">
     <div class="row border m-3 bg-custom-green">
         <div class="col-md-3 rounded-image">
-            <img src="./app/static/image1.jpg" alt="Your Image"> <!-- 画像を挿入 -->
+            <img src="data:image/png;base64,{image_encoded}" alt="Your Image"> <!-- 画像を挿入 -->
         </div>
         <div class="col-md-9">
             <h3 class="text-move"><a class="text-white" href="read.html">春の出会い</a></h3>
