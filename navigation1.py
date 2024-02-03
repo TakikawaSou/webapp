@@ -164,8 +164,111 @@ if selected=="ホーム":
 </html>
 """,unsafe_allow_html=True)
     
+# our visionページ
 if selected=="our vision":
-    st.markdown("(https://www.kodansha.co.jp/)",unsafe_allow_html=True)
+    st.markdown("""
+<!DOCTYPE html>
+<html lang="jp" style="scroll-padding-top:100px;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novel.+</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">    
+</head>
+<body>
+<!-- HERO -->
+<section class="text-white" id="hero">
+    <style>
+        .hero-background {
+            background-image: url(./app/static/hero.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            }
+    </style>
+        <div class="hero-background">
+            <div style="background-color: rgba(0, 0, 0, 0.5);">
+                <div class="text-white vh-100 text-center align-items-center d-flex">
+                    <div class="container overflow-hidden">
+                        <p class="badge bg-success text-white mb-1">コア読者に届く小説投稿サイト</p>
+                        <h1 class="display-1">Novel.+</h1>
+                        <div class="lead">
+                            <div>世界にたった一人でいい</div>
+                            <div>自分の小説に共感してくれる読者に小説を届けよう</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- FEATURE -->
+<section class="bg-light py-4" id="feature">
+    <div class="container overflow-hidden">
+        <div class="row text-center">
+            <div class="col-md-4 mb-3">
+                <div class="fs-1 text-success"><i class="bi bi-pencil-square"></i></div>
+                <h5 class="text-success">作る</h5>
+                <p class="text-muted">小説執筆にお悩みですか？　<span class="text-success fw-bold">AI画像生成</span>によるサポート機能を備えた小説執筆・投稿プラットフォームです。</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="fs-1 text-success"><i class="bi bi-globe"></i></div>
+                <h5 class="text-success">届ける</h5>
+                <p class="text-muted">届いていない小説、ありませんか？　読者を獲得できない、作品を面白いと思ってもらえる読者に届かない。そんな課題にAI<span class="text-success fw-bold">レコメンド</span>でアプローチします。</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="fs-1 text-success"><i class="bi bi-search-heart-fill"></i></div>
+                <h5 class="text-success">届く</h5>
+                <p class="text-muted">小説を探すのに時間がかかり、疲れていませんか？　AI<span class="text-success fw-bold">レコメンド</span>で、趣向にあった小説を瞬時に見つけましょう。あなたが作品の初めてのファンになるかもしれません。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-success py-5">
+    <div class="container overflow-hidden">
+        <div class="row text-center bg-success text-white">
+            <div class="col">
+                <h3 class="py-5">あなたの物語を世界に伝えよう！</h3>
+                <p class="lead">初心者でも、機能を活用することで伝えたい言葉を伝えられます。</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+                
+<div class="content text-black mx-5 mt-3">
+    <p>誰かに<span class="text-success fw-bold">伝えたい言葉</span>がある</p>
+    <p>
+        小説という手段でそれを表現してネットに投稿するものの<span class="text-success fw-bold">読者は増えない</span>
+        本当に届けたい相手に作品が<span class="text-success fw-bold">届いていない</span>気がする
+    </p>
+    <p>そんな状況をNovel.+で乗り越えましょう</p>
+</div>
+
+ <!-- Bootstrapのフッター -->
+<footer class="footer">
+<div class="container text-black text-end my-0">
+    <span>© 2023 Novelize Supporter All rights reserved.</span>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+    });
+</script> 
+
+</body>
+</html>
+""",unsafe_allow_html=True)
     
 if selected=="レコメンド":
     st.markdown("[レコメンド](https://masayoshi-nakagawa.github.io/IseTrip/Isetrip320.html)",unsafe_allow_html=True)
