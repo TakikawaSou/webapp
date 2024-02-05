@@ -4,13 +4,6 @@ from PIL import Image
 import base64
 from pathlib import Path
 
-image = Image.open('logo_novel1.png')
-st.image(image)
-
-image1 = "image1.png"
-image_bytes = Path(image1).read_bytes()
-image_encoded = base64.b64encode(image_bytes).decode()
-
 with st.sidebar:
     selected = option_menu(
 menu_title="メインメニュー",
