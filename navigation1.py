@@ -63,10 +63,10 @@ if selected=="ホーム":
             overflow: visible; /* オーバーフローの表示を可能に */
         }
     }
-    #showcases2 {
+    #novel {
         word-wrap: break-word;
     }
-    #showcases2 img {
+    #novel img {
         max-width: 100%;
         height: auto;
     }
